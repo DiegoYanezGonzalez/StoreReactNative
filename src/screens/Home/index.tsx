@@ -24,9 +24,9 @@ const HomeScreen = () => {
                     <FontAwesome style={styles.star} name="star-o" size={18} color={"#e47911"} />
                     <Text>13.032</Text>
                     </View>
-                  <Text style={styles.price}                  
-                  >from $13.57</Text>
-
+                  <Text style={styles.price}>from $13.57
+                  <Text style={styles.oldPrice}>$16.22</Text>
+                  </Text>
                 </View>
             </View>
         </View>
@@ -65,10 +65,16 @@ const styles = StyleSheet.create({
     },
     ratingsContainer:{
         flexDirection:'row',
-        alignItems:'center'
+        alignItems:'center',
+        marginVertical:5
     },
     star:{
         margin:2
+    },
+    oldPrice:{
+        fontSize:14,
+        fontWeight:"normal",
+        textDecorationLine:'line-through'
     }
 });
 
