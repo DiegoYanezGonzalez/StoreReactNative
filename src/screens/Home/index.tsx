@@ -1,5 +1,6 @@
 import React from 'react';
 import { View, StyleSheet, Image, Text } from 'react-native';
+import FontAwesome from 'react-native-vector-icons/FontAwesome';
 
 const HomeScreen = () => {
     return (
@@ -14,8 +15,15 @@ const HomeScreen = () => {
                     <Text style={styles.title}
                     numberOfLines={3}
                     >Logitech MX Master 3 Advanced Wireless Mouse for Mac - Bluetooth/USB</Text>
-                {/* RATINGS */}
-
+                {/* RATINGS */} 
+                    <View style={styles.ratingsContainer}>
+                    <FontAwesome style={styles.star} name="star" size={18} color={"#e47911"} />
+                    <FontAwesome style={styles.star} name="star" size={18} color={"#e47911"} />
+                    <FontAwesome style={styles.star} name="star" size={18} color={"#e47911"} />
+                    <FontAwesome style={styles.star} name="star-half-full" size={18} color={"#e47911"} />
+                    <FontAwesome style={styles.star} name="star-o" size={18} color={"#e47911"} />
+                    <Text>13.032</Text>
+                    </View>
                   <Text style={styles.price}                  
                   >from $13.57</Text>
 
@@ -49,10 +57,18 @@ const styles = StyleSheet.create({
         resizeMode:'contain'
     },
     title:{
-     width:'100%',
+     fontSize:18
     },
     price:{
-
+      fontSize:18,
+      fontWeight:'bold'
+    },
+    ratingsContainer:{
+        flexDirection:'row',
+        alignItems:'center'
+    },
+    star:{
+        margin:2
     }
 });
 
