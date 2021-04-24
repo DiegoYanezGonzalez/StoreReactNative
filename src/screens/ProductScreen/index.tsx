@@ -6,6 +6,7 @@ import QuantitySelector from '../../components/QuantitySelector';
 import styles from './styles';
 import product from '../../data/product';
 import Button from '../../components/Button';
+import ImageCarousel from '../../components/ImageCarousel';
 
 
 
@@ -19,6 +20,8 @@ const ProductScreen = () => {
             <Text style={styles.title}> {product.title} </Text>
        
        {/* Image carousel */}
+
+       <ImageCarousel  images={product.images} />
 
        {/* Option selector */}
 
