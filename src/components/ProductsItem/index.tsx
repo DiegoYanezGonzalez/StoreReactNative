@@ -37,13 +37,8 @@ const ProducItem = ({item}:ProductItemProps) => {
                 style={styles.star} 
                 name={i< Math.floor(item.avgRating) ? 'star' : 'star-o' }
                 size={18} 
-                color={"#e47911"} />
-                
+                color={"#e47911"} />    
                 )}
-                    
-
-
-
                     <Text> {item.ratings} </Text>
                     </View>
                   <Text style={styles.price}>from ${item.price}

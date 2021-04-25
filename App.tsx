@@ -25,8 +25,8 @@ import ProductScreen from './src/screens/ProductScreen';
    return (
      <SafeAreaView style={backgroundStyle}>
        <StatusBar barStyle={isDarkMode ? 'light-content' : 'dark-content'} />
-       {/* <ProductScreen/> */}
-       <HomeScreen/>
+       <ProductScreen/>
+       
 
        
      </SafeAreaView>
