@@ -39,4 +39,18 @@ export default [
       oldPrice: 120.06,
     }
   },
+  {
+    id: '4',
+    quantity: 1,
+    option: 'Space Gorro',
+    item: {
+      id: '5',
+      title: "Mouse Havit Mechanical Keyboard Wired 89 Keys Gaming Keyboard",
+      image: 'https://i.postimg.cc/LXLPGydL/8888-Whats-App-Image-2020-11-19-at-15-55.jpg',
+      avgRating: 4.8,
+      ratings: 2989,
+      price: 99.98,
+      oldPrice: 120.06,
+    }
+  },
 ];
