@@ -3,19 +3,20 @@ import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import HomeScreen from '../screens/Home';
 import ShoopingCartScreen from '../screens/ShoopingCartScreen';
 import Entypo from 'react-native-vector-icons/Entypo';
+import HomeStack from './HomeStack';
 
 const Tab = createBottomTabNavigator();
 
 const BottomTabNav = () => {
     return (
     <Tab.Navigator 
-    tabBarOptions= {{
+       tabBarOptions= {{
         showLabel:false,
         inactiveTintColor:'#ffbd7d',
         activeTintColor:'#e47911'
         }} >
         <Tab.Screen 
-        component={HomeScreen} 
+        component={HomeStack} 
         name='home' 
         options={{
             tabBarIcon:({color}) =>(
@@ -31,26 +32,26 @@ const BottomTabNav = () => {
             tabBarIcon:({color}) =>(
             <Entypo name="user" color={color} size={22} /> 
             ),
-         }}
-         />
-        <Tab.Screen 
-        component={ShoopingCartScreen} 
-        name="shoppingCart"
-        options={{
-            tabBarIcon:({color}) =>(
-            <Entypo name="shooping-cart" color={color} size={22} /> 
-            ),
-         }}
-        />
-        <Tab.Screen 
-        component={HomeScreen} 
-        name="more"
-        options={{
-            tabBarIcon:({color}) =>(
-            <Entypo name="menu" color={color} size={22} /> 
-            ),
-         }}
-        />  
+            }}
+            />
+            <Tab.Screen 
+            component={ShoopingCartScreen} 
+            name="shoppingCart"
+            options={{
+                tabBarIcon:({color}) =>(
+                <Entypo name="shooping-cart" color={color} size={22} /> 
+                ),
+            }}
+            />
+            <Tab.Screen 
+            component={HomeScreen} 
+            name="more"
+            options={{
+                tabBarIcon:({color}) =>(
+                <Entypo name="menu" color={color} size={22} /> 
+                ),
+            }}
+            />  
     </Tab.Navigator>
     );
 };
