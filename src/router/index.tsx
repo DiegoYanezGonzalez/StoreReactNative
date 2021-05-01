@@ -1,13 +1,19 @@
 import React from 'react';
+import {createStackNavigator} from '@react-navigation/stack';
+import BottomTabNav from './bottomTabNav';
 import { NavigationContainer } from '@react-navigation/native';
 
-import HomeScreen from '../screens/Home';
+const Root = createStackNavigator();
 
 const Router = () => {
     return (
-        <NavigationContainer>
-           <HomeScreen></HomeScreen>  
-        </NavigationContainer>
+    <NavigationContainer>
+        <Root.Navigator>
+               <Root.Screen component={BottomTabNav} name="HomeTabs" />
+           </Root.Navigator>
+    </NavigationContainer>
+           
+        
     )
 }
 

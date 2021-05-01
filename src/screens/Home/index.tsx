@@ -4,6 +4,7 @@ import ProductItem from '../../components/ProductsItem';
 import products from '../../data/products';
 
 const HomeScreen = () => {
+    
     return (
         <View style={styles.page}>
             <FlatList
