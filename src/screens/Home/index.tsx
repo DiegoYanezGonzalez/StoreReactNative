@@ -3,8 +3,9 @@ import { View, StyleSheet, FlatList} from 'react-native';
 import ProductItem from '../../components/ProductsItem';
 import products from '../../data/products';
 
-const HomeScreen = () => {
+const HomeScreen = ({searchValue}:{searchValue:string} ) => {
     
+console.log(searchValue);
     return (
         <View style={styles.page}>
             <FlatList
