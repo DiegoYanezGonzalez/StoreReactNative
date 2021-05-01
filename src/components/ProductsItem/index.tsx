@@ -21,7 +21,7 @@ const ProducItem = ({item}:ProductItemProps) => {
 const navigation = useNavigation ();
 
 const onPress=() =>{
-   navigation.navigate('ProductDetails');
+   navigation.navigate('ProductDetails',{id:item.id});
 }
     return (
         <Pressable onPress={onPress} style={styles.root} >
